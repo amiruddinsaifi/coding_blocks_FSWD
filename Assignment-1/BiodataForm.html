@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My form to fill biodata of Students</title>
+</head>
+<body bgcolor="lightGray">
+    
+
+    <h1>My Biodata Form</h1>
+    <form action='#' method='GET' >
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label for="FirstName">FirstName</label>
+        <input type="text" id="FirstName" placeholder="First Name" name="user" required>
+        <label for="LastName">LastName</label>
+        <input type="text" id="LastName" placeholder="LastName" name="user" required>
+        <br>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <label for="others">Others</label>
+        <input type="radio" name="gender" id="others">
+        <br>
+        <br>
+        <label for="birthday">Date Of Birth:</label>
+        <input type="date" id="birthday" name="birthday">
+         <br>
+         <br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email" id="email">
+
+        <br>
+        <br>
+        <label for="telNo">Phone number: </label>
+        <input id="telNo" name="telNo" type="tel" list="defaultTels" placeholder="+91">
+        <br>
+        <br>
+        <label for="height">Height:</label>
+        <input type="text" id="height" placeholder="height inn feet" required>
+        <br>
+        <br>
+    </fieldset>
+
+        <fieldset>
+            <legend>Education:</legend>
+        <label for="school">School Name:</label>
+        <input type="text" id="school" placeholder="school" required>
+        <br>
+        <br>
+        <label for="class">class:</label>
+        <input type="text" id="class" placeholder="Enter class" required>
+        <br>
+        <br>
+        <label for="select">Stream:</label>:</label>
+        <select name="select" id="cars">
+          <option value="stream">stream</option>
+          <option value="stream">Science</option>
+          <option value="stream">Commerse</option>
+          <option value="stream">Art</option>
+
+
+        </select>
+        <br><br>
+        <label for="marksheet">Marksheet:</label>
+       <input type="file" id="marksheet">
+
+    </fieldset>
+    <br>
+    <input type="submit">
+    </form >
+ 
+    
+<cernter>
+<table border="5" cellspacing="10" cellpadding="10" bgcolor="skyblue" align="center">
+    <tr>
+
+    <th><h1>SchoolTimeTable</h1></th>
+    <th><a href="./SchoolTimeTable.html" target="_blank">SchoolTimeTable</a></th>
+    </tr>
+
+    <tr>
+        <th><h1>Github Repository</h1></th>
+        <th><a href="https://github.com/amiruddinsaifi/coding_blocks_FSWD">Github Repository</a></th>
+        </tr>
+   </table>
+</cernter>
+   
+</body>
+</html>
