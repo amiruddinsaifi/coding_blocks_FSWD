@@ -1,0 +1,37 @@
+body{
+  /* background-image: url(https://images.wallpapersden.com/image/download/cute-kid-couple-toy-4k_a2pqaW2UmZqaraWkpJRmbmdlrWZlbWU.jpg); */
+  /* background-image: url(https://my-test-11.slatic.net/p/50da17f1181c8ccb9f1368bc03fce410.jpg); */
+  background-image: url("cutcouple.jpg");
+  background-repeat: no-repeat;
+  background-size:100vh;
+  background-size:100vw;
+  /* background-position: center; */
+
+}
+
+.container{
+    position:relativep;
+}
+.shadow{
+    width: auto;
+    height: auto;
+    background-color: black;
+    border: 2px solid white;
+    position:absolute;
+    top: 70%;
+    left:48%;
+    margin: -25px 0 0 -25px;
+    transition-property: all;
+    transition-duration: .7s;
+ }
+.shadow:hover{
+    margin-bottom: 2px;
+    transform: translate(0, -1px);
+    color:cyan  ;
+    border:2px solid cyan;
+    box-shadow: 0 4px 2px -2px cyan;
+
+    /* box-shadow: 5px 0px 10px cyan; */
+    cursor: pointer;
+}
+
