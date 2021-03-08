@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #0b78e6;
+  font-size: 1.5rem;
+  height:50px;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+li:last-of-type {
+  position:absolute;
+  
+  right: 20px;
+}
+
+/* card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+/* 
+#road{
+  width: 100%;
+  height:120px;
+  background:url('road1.jpg') repeat;  
+  margin :auto;
+  background-repeat: repeat-x;
+  animation:road is linear infinite;
+  top:150px;  
+}
+@keyframes road {
+  100%{transform:translateX(-3400)}
+
+} */
+
+#road {
+  position:absolute;
+  height: 200px;
+  width: 500%;
+  top:200px;
+  background-image: url("road1.jpg");
+  background-repeat: repeat-x;
+  animation: highway 5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes highway {
+  100% {
+    transform: translateX(-3400px);
+  }
+}
+
+
+#gb1 {
+  position:absolute;
+  width:104px;
+  height:150px;
+  background:url(https://i.imgur.com/egTLaCy.png) repeat;
+  animation:gbwalk 1s steps(6) infinite;
+  margin:auto;
+  bottom:100px;
+  left:300px;
+  /* Ojo, muy costoso en rendimiento */
+  /* filter:drop-shadow(5px 5px 5px #000); */
+}
+
+@keyframes gbwalk {
+  0% { background-position:0 }
+  100% { background-position:-624px }
+}
+
+.car {
+  width: 400px;
+  position: absolute;
+  left: 35%;
+  bottom: 300px;
+  animation: car 0.5s alternate infinite;
+}
+
+.car img {
+  width: 50%;
+}
+
+@keyframes car {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+
+.wheel {
+  position: absolute;
+  left: 20%;
+  bottom: 300px;
+  z-index: 3;
+}
+
+.wheel img {
+  width: 28px;
+  height: 28px;
+  animation: wheel 0.2s linear infinite;
+}
+
+.front-wheel {
+  position: absolute;
+  left: 338px;
+  bottom: 15px;
+}
+
+.back-wheel {
+  position: absolute;
+  left: 240px;
+  bottom: 15px;
+}
+
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* footer */
+.footer {
+  position: fixed;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height:30px;
+  background-color:cyan;
+  color: white;
+  text-align: center;
+}
+
