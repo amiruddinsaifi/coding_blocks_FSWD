@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+       <section class="O-todo">
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col-sm-12 col-md-8">
+                <h1>TodoList Application</h1>
+                <div class="I-todo">
+                  <div class="form-row">
+                    <div class="col-8 mr-sm-2">
+                      <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+                      <input type="hidden" id="saveindex">             
+                    <button type="button" class="btn btn-success mr-sm-2" id="addbtn">
+                      Add Todo
+                    </button>
+                    <button type="button" class="btn btn-success mr-sm-2" id="savebtn" style="display: none;">
+                      Save Todo
+                    </button>
+                </div>
+                 </div>
+                  <div class="to-do-output">
+                    <table class="table table-striped mt-3 mb-0" id="todoList">
+                      
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<script src='app.js'></script>
+<center><h5>Made by Amiruddin Saifi</h5></center>   
+</body>
+</html>
