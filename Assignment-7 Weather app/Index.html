@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OpenWeatherMap Api</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <h1>Weather App Using OpenWeatherMap API</h1>
+      <p>Made By Amiruddin Saifi</p>
+      <p><b>Enter any city name in the input box below to get the data</b></p>
+    </div>
+  
+    <div class="input">
+      <input type="text" placeholder="Enter the city" class="input_text">
+      <input type="submit" value="Submit" class="submit">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="box">
+
+        <img src="https://freepngimg.com/thumb/weather/86910-weather-water-forecasting-computer-icons-download-hq-png-thumb.png">
+        <img src="https://freepngimg.com/thumb/weather/23698-6-weather-transparent-background-thumb.png">
+        <img src="https://freepngimg.com/thumb/weather/23702-1-weather-transparent-thumb.png">
+      </div>
+      <div class="box">
+    <h1 id='cityname'></h1>
+    <h1 id='countrycode'></h1>
+  </div>
+    <h3 id="DT"></h3>
+    <br>
+    <br>
+
+    <h1 id='temp'></h1>
+    <h1 id='visibility'></h1>
+    <div class="box">
+    <h1 id='temp_min'></h1>
+    <h1 id="temp_max"></h1>
+    </div>
+    </div>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
